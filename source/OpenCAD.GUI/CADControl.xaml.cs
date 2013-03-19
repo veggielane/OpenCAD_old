@@ -76,6 +76,7 @@ namespace OpenCAD.GUI
 
         private void Tick(object sender, EventArgs eventArgs)
         {
+            //Debug.WriteLine(ActualWidth);
             lock (GL)
             {
                 _sw.Restart();
@@ -83,7 +84,7 @@ namespace OpenCAD.GUI
 
                 OnUpdate(GL);
                 OnRender(GL);
-                
+
                 GL.Blit(IntPtr.Zero);
 
                 var provider = GL.RenderContextProvider as FBORenderContextProvider;
@@ -98,7 +99,7 @@ namespace OpenCAD.GUI
                 image.Source = newFormatedBitmapSource;
 
                 _sw.Stop();
-                FPS = 1000.0 / _sw.Elapsed.TotalMilliseconds;    
+                FPS = 1000.0 / _sw.Elapsed.TotalMilliseconds;
             }
         }
     }

@@ -1,26 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using OpenCAD.Core;
 using OpenCAD.Core.Graphics;
 using OpenCAD.Core.Maths;
 using OpenCAD.Core.Modeling;
 using OpenCAD.Core.Modeling.Datums;
-using OpenCAD.Core.Modeling.Sections;
 using OpenCAD.Core.Topology;
 using OpenCAD.GUI.Buffers;
 using OpenCAD.GUI.LeafNodes;
 using SharpGL;
 using SharpGL.Enumerations;
-using Point = System.Windows.Point;
 
 namespace OpenCAD.GUI
 {
     public class ModelControl:CADControl
     {
-        private readonly IModel _model;
+
 
         private int _modelUniform;
         private int _viewUniform;
@@ -31,9 +27,11 @@ namespace OpenCAD.GUI
         private IShaderProgram _shader;
         private OrthographicCamera _camera;
 
-        public ModelControl(IModel model)
+        private readonly IModel _model;
+
+        public ModelControl()
         {
-            _model = model;
+            _model = new TestPart("test part");
             MouseWheel += (s, e) =>
                 {
                     using (new Bind(_shader))

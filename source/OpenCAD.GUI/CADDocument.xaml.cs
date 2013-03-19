@@ -27,7 +27,7 @@ namespace OpenCAD.GUI
         {
             _model = model;
             InitializeComponent();
-            Content = new ModelControl(_model);
+            Content = new ModelControl();
             Title = string.Format("Part: {0}", model.Name);
         }
     }

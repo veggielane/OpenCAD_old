@@ -38,6 +38,11 @@ namespace OpenCAD.GUI.ViewModels
                         new MenuItemViewModel {
                             Header = "Add part",
                             Action = () => _eventAggregator.Publish(new AddPartCommand {Part = new JsonPartMeta {FilePath = @"C:\temp\OpenCad\temp.cadpart"}})
+                        },                        
+                        new MenuItemViewModel {
+                            Header = "Open Part",
+                            Action = () =>
+                                     _eventAggregator.Publish(new AddTabViewCommand {Model = new PartViewModel()})
                         }
                     }
                 },

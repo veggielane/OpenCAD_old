@@ -4,6 +4,7 @@
     {
         public TeapotViewModel() {
             Title = "Teapot";
+            
         }
     }
 }
