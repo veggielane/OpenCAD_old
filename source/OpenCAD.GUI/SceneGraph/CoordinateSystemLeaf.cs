@@ -7,7 +7,7 @@ using OpenCAD.GUI.Buffers;
 using SharpGL;
 using SharpGL.Enumerations;
 
-namespace OpenCAD.GUI.LeafNodes
+namespace OpenCAD.GUI.SceneGraph
 {
     public class CoordinateSystemLeaf:ILeafNode
     {

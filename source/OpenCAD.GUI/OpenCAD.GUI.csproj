@@ -158,6 +158,8 @@
     <Compile Include="Models\JsonPartMeta.cs" />
     <Compile Include="Models\ProjectMeta.cs" />
     <Compile Include="MvvmBootstrapper.cs" />
+    <Compile Include="SceneGraph\GeometryLeaf.cs" />
+    <Compile Include="SceneGraph\OpenGLSceneGraph.cs" />
     <Compile Include="ViewModels\AvalonViewModelBaseBase.cs" />
     <Compile Include="ViewModels\EventAggregatorDebugViewModel.cs" />
     <Compile Include="ViewModels\IProjectMeta.cs" />
@@ -193,9 +195,9 @@
     <Compile Include="Views\ProjectExplorerView.xaml.cs">
       <DependentUpon>ProjectExplorerView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LeafNodes\CoordinateSystemLeaf.cs" />
+    <Compile Include="SceneGraph\CoordinateSystemLeaf.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="LeafNodes\DatumPlaneLeaf.cs" />
+    <Compile Include="SceneGraph\DatumPlaneLeaf.cs" />
     <Compile Include="ModelControl.cs" />
     <Page Include="Views\MenuView.xaml">
       <SubType>Designer</SubType>

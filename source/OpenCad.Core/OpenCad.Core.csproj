@@ -43,8 +43,8 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="Graphics\BaseCamera.cs" />
     <Compile Include="Graphics\ICamera.cs" />
+    <Compile Include="Graphics\ISceneGraph.cs" />
     <Compile Include="Graphics\OrthographicCamera.cs" />
-    <Compile Include="Graphics\SceneGraph.cs" />
     <Compile Include="Graphics\Vert.cs" />
     <Compile Include="Maths\Angle.cs" />
     <Compile Include="Maths\Axis.cs" />

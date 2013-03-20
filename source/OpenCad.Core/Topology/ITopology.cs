@@ -8,6 +8,7 @@ namespace OpenCAD.Core.Topology
     {
         string Name { get; }
         IList<IEdgeLoop> Loops { get; }
+
     }
 
     public interface IHalfEdge
@@ -134,11 +135,22 @@ namespace OpenCAD.Core.Topology
     }
 
 
-    public interface IEdge<T>
+    public class HalfEdgePair : IHalfEdgePair
     {
-        T Edge1 { get; }
-        T Edge2 { get; }
+        public IHalfEdge Edge1 { get; private set; }
+        public IHalfEdge Edge2 { get; private set; }
 
+        
+    }
+
+
+
+
+
+    public interface IHalfEdgePair
+    {
+        IHalfEdge Edge1 { get; }
+        IHalfEdge Edge2 { get; }
     }
 
 
