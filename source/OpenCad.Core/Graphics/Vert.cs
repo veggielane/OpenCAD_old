@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using OpenCAD.Core.Maths;
+﻿using System.Runtime.InteropServices;
+using Veg.Maths;
 
 namespace OpenCAD.Core.Graphics
 {

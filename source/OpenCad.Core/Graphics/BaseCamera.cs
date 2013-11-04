@@ -1,4 +1,4 @@
-using OpenCAD.Core.Maths;
+using Veg.Maths;
 
 namespace OpenCAD.Core.Graphics
 {

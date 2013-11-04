@@ -60,44 +60,44 @@ namespace OpenCAD.Test
             LineHalfEdge e11a = null;
             LineHalfEdge e11b = null;
 
-            e0a = new LineHalfEdge("e0a", v1, new Lazy<IHalfEdge>(() => e0b), f0);
-            e1a = new LineHalfEdge("e1a", v1, new Lazy<IHalfEdge>(() => e1b), f0);
-            e2a = new LineHalfEdge("e2a", v1, new Lazy<IHalfEdge>(() => e2b), f0);
-            e3a = new LineHalfEdge("e3a", v1, new Lazy<IHalfEdge>(() => e3b), f0);
-            f0.Loops.Add(new EdgeLoop(e0a, e1a, e2a, e3a));
+            e0a = new LineHalfEdge("e0a", v1, new Lazy<IHalfEdge>(() => e0b));
+            e1a = new LineHalfEdge("e1a", v2, new Lazy<IHalfEdge>(() => e1b));
+            e2a = new LineHalfEdge("e2a", v3, new Lazy<IHalfEdge>(() => e2b));
+            e3a = new LineHalfEdge("e3a", v0, new Lazy<IHalfEdge>(() => e3b));
+            f0.Add(new EdgeLoop(f0, e0a, e1a, e2a, e3a));
 
-            e0b = new LineHalfEdge("e0b", v0, new Lazy<IHalfEdge>(() => e0a), f1);
-            e7a = new LineHalfEdge("e7a", v4, new Lazy<IHalfEdge>(() => e7b), f1);
-            e8a = new LineHalfEdge("e8a", v5, new Lazy<IHalfEdge>(() => e8b), f1);
-            e4a = new LineHalfEdge("e4a", v1, new Lazy<IHalfEdge>(() => e4b), f1);
-            f1.Loops.Add(new EdgeLoop(e0b, e7a, e8a, e4a));
+            e0b = new LineHalfEdge("e0b", v0, new Lazy<IHalfEdge>(() => e0a));
+            e7a = new LineHalfEdge("e7a", v4, new Lazy<IHalfEdge>(() => e7b));
+            e8a = new LineHalfEdge("e8a", v5, new Lazy<IHalfEdge>(() => e8b));
+            e4a = new LineHalfEdge("e4a", v1, new Lazy<IHalfEdge>(() => e4b));
+            f1.Add(new EdgeLoop(f1, e0b, e7a, e8a, e4a));
 
-            e1b = new LineHalfEdge("e1b", v1, new Lazy<IHalfEdge>(() => e1a), f2);
-            e4b = new LineHalfEdge("e4b", v5, new Lazy<IHalfEdge>(() => e4a), f2);
-            e9a = new LineHalfEdge("e9a", v6, new Lazy<IHalfEdge>(() => e9b), f2);
-            e5a = new LineHalfEdge("e5a", v2, new Lazy<IHalfEdge>(() => e5b), f2);
-            f2.Loops.Add(new EdgeLoop(e1b, e4b, e9a, e5a));
-
-
-            e2b = new LineHalfEdge("e2b", v2, new Lazy<IHalfEdge>(() => e2a), f3);
-            e5b = new LineHalfEdge("e5b", v6, new Lazy<IHalfEdge>(() => e5a), f3);
-            e10a = new LineHalfEdge("e10a", v7, new Lazy<IHalfEdge>(() => e10b), f3);
-            e6a = new LineHalfEdge("e6a", v3, new Lazy<IHalfEdge>(() => e6b), f3);
-            f3.Loops.Add(new EdgeLoop(e2b, e5b, e10a, e6a));
+            e1b = new LineHalfEdge("e1b", v1, new Lazy<IHalfEdge>(() => e1a));
+            e4b = new LineHalfEdge("e4b", v5, new Lazy<IHalfEdge>(() => e4a));
+            e9a = new LineHalfEdge("e9a", v6, new Lazy<IHalfEdge>(() => e9b));
+            e5a = new LineHalfEdge("e5a", v2, new Lazy<IHalfEdge>(() => e5b));
+            f2.Add(new EdgeLoop(f2, e1b, e4b, e9a, e5a));
 
 
-            e3b = new LineHalfEdge("e3b", v3, new Lazy<IHalfEdge>(() => e3a), f4);
-            e6b = new LineHalfEdge("e6b", v7, new Lazy<IHalfEdge>(() => e6a), f4);
-            e11a = new LineHalfEdge("e11a", v4, new Lazy<IHalfEdge>(() => e11b), f4);
-            e7b = new LineHalfEdge("e7b", v0, new Lazy<IHalfEdge>(() => e7a), f4);
-            f4.Loops.Add(new EdgeLoop(e3b, e6b, e11a, e7b));
+            e2b = new LineHalfEdge("e2b", v2, new Lazy<IHalfEdge>(() => e2a));
+            e5b = new LineHalfEdge("e5b", v6, new Lazy<IHalfEdge>(() => e5a));
+            e10a = new LineHalfEdge("e10a", v7, new Lazy<IHalfEdge>(() => e10b));
+            e6a = new LineHalfEdge("e6a", v3, new Lazy<IHalfEdge>(() => e6b));
+            f3.Add(new EdgeLoop(f3, e2b, e5b, e10a, e6a));
 
 
-            e8b = new LineHalfEdge("e8b", v4, new Lazy<IHalfEdge>(() => e8a), f5);
-            e11b = new LineHalfEdge("e11b", v7, new Lazy<IHalfEdge>(() => e11a), f5);
-            e10b = new LineHalfEdge("e10b", v6, new Lazy<IHalfEdge>(() => e10a), f5);
-            e9b = new LineHalfEdge("e9b", v5, new Lazy<IHalfEdge>(() => e9b), f5);
-            f5.Loops.Add(new EdgeLoop(e8b, e11b, e10b, e9b));
+            e3b = new LineHalfEdge("e3b", v3, new Lazy<IHalfEdge>(() => e3a));
+            e6b = new LineHalfEdge("e6b", v7, new Lazy<IHalfEdge>(() => e6a));
+            e11a = new LineHalfEdge("e11a", v4, new Lazy<IHalfEdge>(() => e11b));
+            e7b = new LineHalfEdge("e7b", v0, new Lazy<IHalfEdge>(() => e7a));
+            f4.Add(new EdgeLoop(f4, e3b, e6b, e11a, e7b));
+
+
+            e8b = new LineHalfEdge("e8b", v4, new Lazy<IHalfEdge>(() => e8a));
+            e11b = new LineHalfEdge("e11b", v7, new Lazy<IHalfEdge>(() => e11a));
+            e10b = new LineHalfEdge("e10b", v6, new Lazy<IHalfEdge>(() => e10a));
+            e9b = new LineHalfEdge("e9b", v5, new Lazy<IHalfEdge>(() => e9b));
+            f5.Add(new EdgeLoop(f5, e8b, e11b, e10b, e9b));
 
             var shell = new Shell(f0, f1, f2, f3, f4, f5);
 

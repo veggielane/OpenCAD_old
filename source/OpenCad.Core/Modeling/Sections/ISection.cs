@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using OpenCAD.Core.Maths;
+
 using OpenCAD.Core.Modeling.Features;
-using OpenCAD.Core.Topology;
+using Veg.Maths.Geometry;
 
 namespace OpenCAD.Core.Modeling.Sections
 {

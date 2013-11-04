@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OpenCAD.Core.Maths;
+
 using OpenCAD.Core.Meshing;
-using OpenCAD.Core.Shapes;
+using Veg.Maths;
 
 namespace OpenCAD.Core
 {
     public static class Extensions
     {
-        public static string fmt(this string format, params object[] args)
+        public static string Fmt(this string format, params object[] args)
         {
             return string.Format(format, args);
         }

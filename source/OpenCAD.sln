@@ -10,11 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCAD.OpenGL", "OpenCAD.OpenGL\OpenCAD.OpenGL.csproj", "{BD59FC7B-07D2-4B46-BAEF-EF2CF1324CDA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1601572A-A608-4B1D-B6AF-E01EF2D46187}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specs", "Specs", "{E74B3300-19DF-45F3-8D08-01D42299A43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCAD.Core.Specs", "OpenCAD.Core.Specs\OpenCAD.Core.Specs.csproj", "{7D59A73B-264E-482A-B26F-BE69D1424E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCAD.WebGL", "OpenCAD.WebGL\OpenCAD.WebGL.csproj", "{8754BC50-6F19-4ACB-A072-9CC6102F4EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCAD.Temp", "OpenCAD.Temp\OpenCAD.Temp.csproj", "{8E827326-896D-4D07-A611-D390709856BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,11 +41,23 @@ Global
 		{BD59FC7B-07D2-4B46-BAEF-EF2CF1324CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD59FC7B-07D2-4B46-BAEF-EF2CF1324CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD59FC7B-07D2-4B46-BAEF-EF2CF1324CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D59A73B-264E-482A-B26F-BE69D1424E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D59A73B-264E-482A-B26F-BE69D1424E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D59A73B-264E-482A-B26F-BE69D1424E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D59A73B-264E-482A-B26F-BE69D1424E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8754BC50-6F19-4ACB-A072-9CC6102F4EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8754BC50-6F19-4ACB-A072-9CC6102F4EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8754BC50-6F19-4ACB-A072-9CC6102F4EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8754BC50-6F19-4ACB-A072-9CC6102F4EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E827326-896D-4D07-A611-D390709856BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E827326-896D-4D07-A611-D390709856BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E827326-896D-4D07-A611-D390709856BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E827326-896D-4D07-A611-D390709856BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(Performance) = preSolution
-		HasPerformanceSessions = true
+	GlobalSection(NestedProjects) = preSolution
+		{7D59A73B-264E-482A-B26F-BE69D1424E01} = {E74B3300-19DF-45F3-8D08-01D42299A43D}
 	EndGlobalSection
 EndGlobal
