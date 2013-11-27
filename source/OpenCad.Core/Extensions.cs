@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using OpenCAD.Core.Meshing;
+using OpenCAD.Core.Primatives;
 using Veg.Maths;
 
 namespace OpenCAD.Core

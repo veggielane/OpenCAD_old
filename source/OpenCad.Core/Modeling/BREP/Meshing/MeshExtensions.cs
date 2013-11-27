@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenCAD.Core.Modeling.BREP.Meshing;
-using OpenCAD.Core.Primatives;
+﻿using Veg.Maths.Geometry;
 
-namespace OpenCAD.Core.Meshing
+namespace OpenCAD.Core.Modeling.BREP.Meshing
 {
     public static class MeshExtensions
     {

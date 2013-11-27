@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCAD.WebGL", "OpenCAD.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCAD.Temp", "OpenCAD.Temp\OpenCAD.Temp.csproj", "{8E827326-896D-4D07-A611-D390709856BD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApps", "TestApps", "{1319954A-76DF-43E3-A196-E61294E56874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCAD.TestApp.Octree", "OpenCAD.TestApp.Octreee\OpenCAD.TestApp.Octree.csproj", "{BDABC0E1-1DE4-4A8C-A39D-C4F13A4C7363}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,11 +57,16 @@ Global
 		{8E827326-896D-4D07-A611-D390709856BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E827326-896D-4D07-A611-D390709856BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E827326-896D-4D07-A611-D390709856BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDABC0E1-1DE4-4A8C-A39D-C4F13A4C7363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDABC0E1-1DE4-4A8C-A39D-C4F13A4C7363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDABC0E1-1DE4-4A8C-A39D-C4F13A4C7363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDABC0E1-1DE4-4A8C-A39D-C4F13A4C7363}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7D59A73B-264E-482A-B26F-BE69D1424E01} = {E74B3300-19DF-45F3-8D08-01D42299A43D}
+		{BDABC0E1-1DE4-4A8C-A39D-C4F13A4C7363} = {1319954A-76DF-43E3-A196-E61294E56874}
 	EndGlobalSection
 EndGlobal
